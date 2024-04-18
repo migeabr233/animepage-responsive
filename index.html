@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime & Películas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Para que el cuerpo ocupe toda la altura de la ventana */
+            display: flex;
+            flex-direction: column; /* Para alinear el header, nav, section y footer en columna */
+        }
+
+        header, footer {
+            background-color: slategray;
+            color: white; /* Texto blanco para contrastar con el fondo */
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0; /* Para eliminar el margen predeterminado del h1 */
+            text-align: center; /* Centrar el texto */
+        }
+
+        nav {
+            background-color: slategray;
+            padding: 10px 20px; /* Añadir un poco de espacio alrededor de los enlaces */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0; /* Eliminar el margen predeterminado de la lista */
+            text-align: center; /* Centrar los enlaces */
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li:hover,
+        nav ul li.active {
+            background-color: darkslategray;
+        }
+
+        section {
+            flex: 1; /* Para que ocupe el espacio restante entre header y footer */
+            text-align: center; /* Centrar el texto en dispositivos móviles */
+        }
+
+        .movies-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centrar los elementos dentro de la sección */
+        }
+
+        .movie {
+            width: 250px;
+            margin: 20px;
+        }
+
+        .movie img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            background-color: slategray;
+            color: white;
+            padding: 20px;
+            flex-shrink: 0; /* Evitar que el footer se encoja en dispositivos móviles */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anime & Películas</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#">Anime</a></li>
+            <li><a href="#">Películas</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Últimos Estrenos</h2>
+        <div class="movies-container">
+            <div class="movie">
+                <img src="https://via.placeholder.com/250" alt="Anime 1">
+                <h3>Nombre del Anime o Película</h3>
+                <p>Descripción breve del contenido.</p>
+            </div>
+            <div class="movie">
+                <img src="https://via.placeholder.com/250" alt="Anime 2">
+                <h3>Nombre del Anime o Película</h3>
+                <p>Descripción breve del contenido.</p>
+            </div>
+            <div class="movie">
+                <img src="https://via.placeholder.com/250" alt="Anime 2">
+                <h3>Nombre del Anime o Película</h3>
+                <p>Descripción breve del contenido.</p>
+            </div>
+            <div class="movie">
+                <img src="https://via.placeholder.com/250" alt="Anime 2">
+                <h3>Nombre del Anime o Película</h3>
+                <p>Descripción breve del contenido.</p>
+            </div>
+            <!-- Agrega más películas o anime aquí -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Anime & Películas</p>
+    </footer>
+</body>
+</html>
